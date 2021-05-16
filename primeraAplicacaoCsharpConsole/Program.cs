@@ -1,4 +1,5 @@
 ﻿using System;
+using primeraAplicacaoCsharpConsole.Exemplos;
 
 namespace primeraAplicacaoCsharpConsole
 {
@@ -6,13 +7,15 @@ namespace primeraAplicacaoCsharpConsole
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            int numeroDeVezes = 5;
-
-            for (int i = 0; i < numeroDeVezes; i++)
-            {
-                Console.WriteLine($"Bem-vindo ao curso de .NET {i}");
-            }
+            var pilha = new Pilha();
+            
+            pilha.Empilha(1);
+            pilha.Empilha(10);
+            pilha.Empilha(100);
+            Console.WriteLine(pilha.Desempilha());
+            Console.WriteLine(pilha.Desempilha());
+            Console.WriteLine(pilha.Desempilha());
+            Console.WriteLine(pilha.Desempilha());
         }
     }
 }
